@@ -8,7 +8,7 @@ class sections extends Model
 {
     protected $fillable=[
         'section_name',
-        'descripion',
+        'description',
         'Created_by',
     ];
 }
