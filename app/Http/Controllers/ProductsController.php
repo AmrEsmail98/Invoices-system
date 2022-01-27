@@ -53,7 +53,7 @@ class ProductsController extends Controller
             'product_name' => $request->product_name,
             'section_id' => $request->section_id,
             'description' => $request->description,
-            'section_name'=>$request->section_name,
+            'section_id'=>$request->section_id,
         ]);
         session()->flash('Add', 'تم اضافة المنتج بنجاح ');
         return redirect('/products');
