@@ -12,6 +12,7 @@ class CreateInvoicesTable extends Migration
      * @return void
      */
     public function up()
+
     {
         Schema::create('invoices', function (Blueprint $table) {
             $table->bigIncrements('id');

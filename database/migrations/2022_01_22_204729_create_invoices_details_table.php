@@ -22,6 +22,7 @@ class CreateInvoicesDetailsTable extends Migration
             $table->string('Section',999);
             $table->string('Status',50);
             $table->integer('Value_Status');
+            $table->date('Payment_Date')->nullable();
             $table->text('note')->nullable();
             $table->string('user',300);
             $table->timestamps();

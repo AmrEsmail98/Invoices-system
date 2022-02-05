@@ -96,12 +96,14 @@ class InvoicesDetailsController extends Controller
         session()->flash('delete', 'تم حذف المرفق بنجاح');
         return back();
     }
+    
     public function open_file($invoice_number,$file_name)
 
     {
         $files = Storage::disk('public_uploads')->getDriver()->getAdapter()->applyPathPrefix($invoice_number.'/'.$file_name);
         return response()->file($files);
     }
+
     public function get_file($invoice_number,$file_name)
 
     {
