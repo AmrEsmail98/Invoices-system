@@ -98,8 +98,8 @@ class InvoicesController extends Controller
         }
 
 
-           // $user = User::first();
-           // Notification::send($user, new AddInvoice($invoice_id));
+           $user = User::first();
+           Notification::send($user, new AddInvoice($invoice_id));
 
         // $user = User::get();
         // $invoices = invoices::latest()->first();
