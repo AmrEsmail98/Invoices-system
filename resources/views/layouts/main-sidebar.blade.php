@@ -58,7 +58,7 @@
                             </li>
                         @endcan
 
-                        @can('الفواتير المدفوعة')
+                        {{-- @can('الفواتير المدفوعة')
                             <li><a class="slide-item" href="{{ url('/' . ($page = 'Invoice_Partial')) }}">الفواتير المدفوعة
                                     جزئيا</a>
                             </li>
@@ -66,7 +66,7 @@
 
                         @can('ارشيف الفواتير')
                             <li><a class="slide-item" href="{{ url('/' . ($page = 'Archive')) }}">ارشيف الفواتير</a></li>
-                        @endcan
+                        @endcan --}}
                     </ul>
                 </li>
             @endcan

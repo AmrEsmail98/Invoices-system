@@ -14,15 +14,15 @@ class RoleController extends Controller
 */
 
 
-// function __construct()
-// {
+function __construct()
+{
 
-// $this->middleware('permission:عرض صلاحية', ['only' => ['index']]);
-// $this->middleware('permission:اضافة صلاحية', ['only' => ['create','store']]);
-// $this->middleware('permission:تعديل صلاحية', ['only' => ['edit','update']]);
-// $this->middleware('permission:حذف صلاحية', ['only' => ['destroy']]);
+$this->middleware('permission:عرض صلاحية', ['only' => ['index']]);
+$this->middleware('permission:اضافة صلاحية', ['only' => ['create','store']]);
+$this->middleware('permission:تعديل صلاحية', ['only' => ['edit','update']]);
+$this->middleware('permission:حذف صلاحية', ['only' => ['destroy']]);
 
-// }
+}
 
 
 
